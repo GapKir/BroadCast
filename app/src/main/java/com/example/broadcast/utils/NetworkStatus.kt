@@ -15,8 +15,6 @@ object NetworkStatus {
         networkListeners.forEach{
             it.networkChanged(getNetworkStatus())
         }
-        Logger.log("isNetworkConnected = $isNetworkConnected")
-
     }
 
     fun addListener(listener: NetworkListener){
